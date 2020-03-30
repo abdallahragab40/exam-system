@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exam Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      charset="utf-8"
+    ></script>
+  </head>
+  <body>
+    <div class="container2">
+      <div class="head">
+        <img src="logog.png" alt="logo" class="logo" />
+        <h1 class="title">English Test</h1>
+        <div class="timer">
+          Exam ends in <span id="time">05:00</span> minutes!
+        </div>
+      </div>
+      <div class="content">
+        <div class="question" id="0">
+          <!-- Question no -->
+          <h2 id="test_status" class="quesNo"></h2>
+          <div id="test"></div>
+          <h2 class="questionName"></h2>
+          <!-- Answers -->
+
+          <div class="radio" id="ans-0">
+            <input id="radio-0" name="answer" value="any" type="radio" />
+            <label for="radio-0" class="label">any</label>
+          </div>
+          <div class="radio" id="ans-1">
+            <input id="radio-1" name="answer" value="any" type="radio" />
+            <label for="radio-1" class="label">any</label>
+          </div>
+          <div class="radio" id="ans-2">
+            <input id="radio-2" name="answer" value="any" type="radio" />
+            <label for="radio-2" class="label">any</label>
+          </div>
+          <div class="radio" id="ans-3">
+            <input id="radio-3" name="answer" value="any" type="radio" />
+            <label for="radio-3" class="label">any</label>
+          </div>
+
+          <!-- Buttons -->
+          <div class="btns">
+            <span id="current"></span>
+            <button class="btn click" id="prv__btn">Prev</button>
+            <button class="btn click" id="nxt__btn">Next</button>
+            <button class="btn click" id="fns__btn">Finish</button>
+          </div>
+        </div>
+        <!-- Marked questions -->
+        <div class="mark">
+          <h2 class="title">marked Question <span class="count">0</span></h2>
+          <ul></ul>
+        </div>
+      </div>
+      <!-- Result  -->
+      <div class="result">
+        <p class="score">sample</p>
+        <p class="time">test</p>
+      </div>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>

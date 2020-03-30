@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registeration</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      charset="utf-8"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="exam.html" class="login-form">
+        <h1>Welcome! 👋</h1>
+
+        <div class="input">
+          <input type="text" />
+          <span data-placeholder="First name"></span>
+        </div>
+
+        <div class="input">
+          <input type="text" />
+          <span data-placeholder="Last name"></span>
+        </div>
+        <div class="input">
+          <input type="email" required />
+          <span data-placeholder="Email"></span>
+        </div>
+        <h3>Gender</h3>
+        <div class="radio">
+          <input id="radio-1" name="radio" type="radio" checked />
+          <label for="radio-1" class="radio-label">Male</label>
+        </div>
+        <div class="radio">
+          <input id="radio-2" name="radio" type="radio" />
+          <label for="radio-2" class="radio-label">Female</label>
+        </div>
+        <input type="submit" class="logbtn" value="Get started" />
+      </form>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>
